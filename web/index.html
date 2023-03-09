@@ -5,7 +5,9 @@
         <title>Formulario de Votación - Desis</title>
 
         <!--Hoja de Estilos-->
-        <!--link rel="stylesheet" type="text/css" href="assets/css/styles.css"/-->
+        <link rel="stylesheet" type="text/css" href="assets/css/styles.css"/>
+        
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&family=Roboto:wght@300&display=swap" rel="stylesheet">
 
         <!-- Script JS-->
         
@@ -17,7 +19,7 @@
                 <div id="logo">
                     <img src="assets/images/logo-desis.png" class="app-logo" alt="Logo-Desis" />
                     <span id="brand">
-                        <h1>Programa de Incorporación de Programadores y Desarrolladores Web</h1>
+                        <p>Programa de Incorporación de Programadores y Desarrolladores Web</p>
                     </span>
                 </div>
 
@@ -31,25 +33,26 @@
         <div class="center">
             <section id="content">              
                 <h1 class="subheader">FORMULARIO DE VOTACIÓN:</h1>
+                <hr>
 
                 <form class="mid-form">
                     <div class="form-group">
-                        <label for="nombre">Nombre y Apellido</label>
-                        <input type="text" name="nombre" placeholder="Ej: Juan Perez"/>
+                        <label for="nombre">Nombre y Apellido:</label>
+                        <input class="form-control" type="text" name="nombre" placeholder="Ej: Juan Perez"/>
                     </div>
 
                     <div class="form-group">
-                        <label for="alias">Alias</label>
+                        <label for="alias">Alias:</label>
                         <input type="text" name="alias" placeholder="Ej: JuanP"/>
                     </div>
 
                     <div class="form-group">
-                        <label for="rut">RUT</label>
+                        <label for="rut">RUT:</label>
                         <input type="text" name="rut" placeholder="Ej: 11111111-1"/>
                     </div>
 
                     <div class="form-group">
-                        <label for="email">Email</label>
+                        <label for="email">Email:</label>
                         <input type="text" name="email" placeholder="Ej: juan@perez.com"/>
                     </div>
 
@@ -91,10 +94,10 @@
                     
                     <div class="form-group checkbox">
                         <label for="referencia">Cómo se enteró de nosotros:</label>
-                        <input type="checkbox" name="referencia" value="web"/> Web
-                        <input type="checkbox" name="referencia" value="tv"/> TV
-                        <input type="checkbox" name="referencia" value="rs"/> Redes Sociales
-                        <input type="checkbox" name="referencia" value="amigo"/> Amigo
+                        <input class="form-checkbox" type="checkbox" name="referencia" value="web"/> Web
+                        <input class="form-checkbox" type="checkbox" name="referencia" value="tv"/> TV
+                        <input class="form-checkbox" type="checkbox" name="referencia" value="rs"/> Redes Sociales
+                        <input class="form-checkbox" type="checkbox" name="referencia" value="amigo"/> Amigo
                     </div>
 
                     <div class="clearfix"></div>
