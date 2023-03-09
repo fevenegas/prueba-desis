@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Formulario de Votación - Desis</title>
+
+        <!--Hoja de Estilos-->
+        <!--link rel="stylesheet" type="text/css" href="assets/css/styles.css"/-->
+
+        <!-- Script JS-->
+        
+    </head>
+    <body>
+        <header id="header">
+            <div class="center">
+                <!--LOGO-->
+                <div id="logo">
+                    <img src="assets/images/logo-desis.png" class="app-logo" alt="Logo-Desis" />
+                    <span id="brand">
+                        <h1>Programa de Incorporación de Programadores y Desarrolladores Web</h1>
+                    </span>
+                </div>
+
+                <!--MENU-->
+
+                <!-- Limpiar floats-->
+                <div class="clearfix"></div>
+            </div>
+        </header>
+
+        <div class="center">
+            <section id="content">              
+                <h1 class="subheader">FORMULARIO DE VOTACIÓN:</h1>
+
+                <form class="mid-form">
+                    <div class="form-group">
+                        <label for="nombre">Nombre y Apellido</label>
+                        <input type="text" name="nombre" placeholder="Ej: Juan Perez"/>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="alias">Alias</label>
+                        <input type="text" name="alias" placeholder="Ej: JuanP"/>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="rut">RUT</label>
+                        <input type="text" name="rut" placeholder="Ej: 11111111-1"/>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="text" name="email" placeholder="Ej: juan@perez.com"/>
+                    </div>
+
+                    <div class="select">
+                        <!--Multiple Select Box-->
+                        <label for="region">Región:</label>
+                        <!-- CREAR PLACEHOLDER CON JS!!! -->
+                        <select name="region" id="region" >
+                            <option value="RM">Región Metropolitana</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select> 
+                    </div>
+                    
+                    <div class="select">
+                        <!--Multiple Select Box-->
+                        <label for="comuna">Comuna:</label>
+                        <!-- CREAR PLACEHOLDER CON JS!!! -->
+                        <select name="comuna" id="comuna" >
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select> 
+                    </div>
+
+                    <div class="select">
+                        <!--Multiple Select Box-->
+                        <label for="candidato">Candidato:</label>
+                        <!-- CREAR PLACEHOLDER CON JS!!! -->
+                        <select name="candidato" id="candidato" >
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select> 
+                    </div>
+                    
+                    <div class="form-group checkbox">
+                        <label for="referencia">Cómo se enteró de nosotros:</label>
+                        <input type="checkbox" name="referencia" value="web"/> Web
+                        <input type="checkbox" name="referencia" value="tv"/> TV
+                        <input type="checkbox" name="referencia" value="rs"/> Redes Sociales
+                        <input type="checkbox" name="referencia" value="amigo"/> Amigo
+                    </div>
+
+                    <div class="clearfix"></div>
+
+                    <input type="submit" value="Votar" class="btn btn-success"/>
+                </form>
+            </section>
+
+
+            <div class="clearfix"></div>
+        </div>
+
+        <footer id="footer">
+            <div class="center">
+                <p>
+                    &copy; Página para prueba desarrollada para el Programa de Incorporación de Programadores y Desarrolladores Web de la empresa Desis. Creada por Fabián Venegas Bustamante.
+                </p>
+            </div>
+        </footer>
+    </body>
+</html>
