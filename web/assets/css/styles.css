@@ -61,6 +61,7 @@ hr {
     height: 1px;
     border: 0px;
     margin-bottom: 40px;
+    width: 70%;
 }
 
 
@@ -68,6 +69,7 @@ hr {
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
     margin-bottom: 117px;
+    height: 664px;
 }
 
 #content h1 {
@@ -94,6 +96,7 @@ select::-ms-expand {
 
 select {
     display: inline-block;
+    margin-bottom: 10px;
     width: 102%;
     height: 30px;
     box-sizing: border-box;
@@ -142,11 +145,14 @@ select {
 }
     
 #footer {
+    display: block;
     background: #f7f7f7;
     width: 100%;
     height: 70px;
     line-height: 70px;
     color: #444;
+    position: absolute;
+    bottom: 0;
 }
 
 #footer p {
@@ -155,9 +161,146 @@ select {
     padding: 0px;
 }
 
+/* RESPONSIVE */
+/*Desde los 0px hasta los 1488px de pantalla*/
+@media (max-width: 1834px) {
+    .checkbox label{
+        width: 110%;
+    }
 
+    .checkbox .form-checkbox{
+        margin-left: 0px;
+        margin-right: -14px;
+    }
 
-/*
-.form-control {
+    #footer p {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 1716px) {
+    .mid-form {
+        width: 35%;
+        margin-left: 380px;
+    }
+    #footer p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 1573px) {
+    #logo {
+        font-size: 22px;
+        float: left;
+        width: 83%;
+    }
+
+    #logo img {
+        height: 45px;
+        margin-top: 13px;
+        margin-right: 10px;
+    }
+}
+
+@media (max-width: 1470px) {
+    .mid-form {
+        width: 40%;
+        margin-left: 280px;
+    }
+}
+
+@media (max-width: 1420px) {
+    #header {
+        height: 70px;
+    }
     
-}*/
+    #logo {
+        font-size: 20px;
+    }
+
+    #logo img {
+        height: 40px;
+    }
+
+    .subheader {
+        font-size: 18px;
+    }
+
+    #content {
+        font-size: 13px;
+        margin-bottom: 117px;
+        height: 664px;
+    }
+
+    #footer p {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 1272px) {
+    #logo img {
+        height: 30px;
+    }
+    #header {
+        height: 60px;
+    }
+}
+
+@media (max-width: 1221px) {
+    .center {
+        width: 90%;
+    }
+    #logo img {
+        margin-right: 10px;
+    }
+}
+
+@media (max-width: 1018px) {
+    .center {
+        width: 95%;
+    }
+
+    .checkbox .form-checkbox{
+        margin-left: 0px;
+        margin-right: -10px;
+    }
+}
+
+@media (max-width: 1018px) {
+    #logo {
+        float: inline-end;
+    }
+    #logo img {
+        margin-left: -150px;
+    }
+
+    #footer p {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 830px) {
+    #logo img {
+        height: 25px;
+        margin-left: -125px;
+    }
+
+    #logo {
+        font-size: 17px;
+    }
+    
+    .subheader {
+        font-size: 14px;
+    }
+
+    .mid-form {
+        width: 50%;
+        text-align: left;
+        color: #777777;
+        margin-left: 180px;
+    }
+
+    #footer p {
+        font-size: 0.54em;
+    }
+}
